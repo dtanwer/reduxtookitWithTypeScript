@@ -1,11 +1,11 @@
 
-import './App.css';
 import UserRoutes from './Routes';
+import './App.css';
 
 
 const App = () => {
   return (
-    <div>
+    <div className='App'>
       <UserRoutes />
     </div>
   )

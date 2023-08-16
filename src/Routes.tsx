@@ -7,6 +7,7 @@ import Protected from './Components/protected/Protected'
 import Page1 from './Components/HomePages/Page1'
 import Page2 from './Components/HomePages/Page2'
 import Page3 from './Components/HomePages/Page3'
+import Game from './Pages/Game'
 const  UserRoutes=()=> {
   return (
     <div>     
@@ -14,6 +15,7 @@ const  UserRoutes=()=> {
         <Routes>
           <Route path='/' element={<Login/>}/>
           <Route path='/register' element={<Register/>}/>
+          <Route path='/game' element={<Game/>}/>
           <Route path='/home' element={ <Protected><Home/></Protected>}>
             <Route index element={<Page1/>}/>
             <Route path='2' element={<Page2/>}/>
